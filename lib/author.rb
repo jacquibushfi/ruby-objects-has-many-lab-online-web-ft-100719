@@ -18,13 +18,13 @@ class Author
 
   def add_post(post)
     @posts << post
-    post.author = self
+    post.title = self
     end
 
   def add_post_by_title(title)
     post = Post.new(title)
     @posts << post
-    post.author = self
+    post.title = self
     end
 
   def self.post_count
@@ -33,7 +33,7 @@ class Author
 
   def posts
     Post.all.select do |post|
-      post.author == self
+      post.title == self
     end
   end
 end
