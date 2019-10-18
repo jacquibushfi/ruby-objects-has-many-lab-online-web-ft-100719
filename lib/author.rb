@@ -33,7 +33,7 @@ class Author
 
   def posts
     Post.all.select do |post|
-      post.title == self
+      post.author == self
     end
   end
 end
