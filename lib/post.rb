@@ -23,8 +23,8 @@ class Post
 
 
    def title
-     Post.all.select do |post|
-       post.title == self
+     Post.each do |post|
+       post.title
      end
   end
 
