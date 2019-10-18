@@ -14,18 +14,7 @@ class Post
    end
 
    def author_name
-    if self.author_name
-      self.title.author
-    else
-      nil
-    end
+  @author ? @author.name : NIL
   end
-
-
-  #  def title
-  #    Posts.map do |post|
-  #      post.title
-  #    end
-  # end
-
+  
 end
