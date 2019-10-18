@@ -13,14 +13,7 @@ class Author
   end
 
   def self.all
-    self
     @@all
-  end
-
-  def posts
-    Post.all.select do |post|
-      post.author == self
-    end
   end
 
   def add_post(post)
@@ -36,5 +29,11 @@ class Author
 
   def self.post_count
     Post.all.size
+  end
+
+  def posts
+    Post.all.select do |post|
+      post.author == self
+    end
   end
 end
