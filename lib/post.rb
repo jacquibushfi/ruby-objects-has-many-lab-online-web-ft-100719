@@ -22,7 +22,7 @@ class Post
   end
 
   def author
-    post.map do |author|
+    @@all.map do |author|
       author.title
     end
   end
