@@ -1,3 +1,5 @@
+require "pry"
+
 class Author
 
   attr_accessor :name, :posts
@@ -7,10 +9,14 @@ class Author
   def initialize(name)
     @name = name
     @posts = []
-    self.class.all << self
+    binding.pry
+    @@all << self
+    
   end
 
   def self.all
+    binding.pry
+    self
     @@all
   end
 
