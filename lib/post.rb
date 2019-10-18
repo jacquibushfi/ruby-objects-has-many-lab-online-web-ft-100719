@@ -23,7 +23,7 @@ class Post
 
 
    def title
-     posts.map do |post|
+     Posts.map do |post|
        post.title
      end
   end
