@@ -22,10 +22,10 @@ class Post
   end
 
 
-   def title
-     Posts.map do |post|
-       post.title
-     end
-  end
+  #  def title
+  #    Posts.map do |post|
+  #      post.title
+  #    end
+  # end
 
 end
