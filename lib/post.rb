@@ -23,8 +23,8 @@ class Post
 
 
    def title
-     Post.map do |post|
-       post.title
+     Post.all.select do |post|
+       post.title == title
      end
   end
 
