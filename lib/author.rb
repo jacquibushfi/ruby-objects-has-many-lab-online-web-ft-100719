@@ -9,12 +9,10 @@ class Author
   def initialize(name)
     @name = name
     @posts = []
-    self.class.all << self
-
+    @@all << self
   end
 
   def self.all
-    binding.pry
     self
     @@all
   end
