@@ -3,7 +3,7 @@ class Post
 
    @@all = []
 
-   def initialize(author, title)
+   def initialize(title)
      @author = author
      @title = title
      @@all << self
