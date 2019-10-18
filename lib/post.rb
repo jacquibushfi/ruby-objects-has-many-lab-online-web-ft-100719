@@ -16,5 +16,5 @@ class Post
    def author_name
   @author ? @author.name : NIL
   end
-  
+
 end
