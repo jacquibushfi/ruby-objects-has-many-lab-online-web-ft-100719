@@ -22,8 +22,8 @@ class Post
   end
 
   def author
-    Post.map do |author|
-      author.title
+    Post.all.select do |author|
+      author.title == self
     end
   end
 
