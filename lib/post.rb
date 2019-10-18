@@ -1,30 +1,31 @@
 class Post
   attr_accessor :author, :title
-
-  @@all = []
-
-  def initialize(author)
-    @title = title
-    @author = author
-    @@all << self
-  end
-
-  def self.all
-    @@all
-  end
-
-  def author_name
-    if author
-      self.author.name
+  
+   @@all = []
+ 
+   def initialize(author, title)
+     @author = author
+     @title = title
+     @@all << self
+   end
+ 
+   def self.all
+     @@all
+   end
+ 
+   def title_name
+    if self.title_name
+      self.title.author
     else
       nil
     end
   end
-
-  def author
-    posts.map do |author|
-      author.title
-    end
+ 
+ 
+   def title
+     posts.map do |post|
+       post.title
+     end
   end
 
 end
