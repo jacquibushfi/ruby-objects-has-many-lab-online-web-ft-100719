@@ -11,7 +11,7 @@ class Author
     @posts = []
     binding.pry
     @@all << self
-    
+
   end
 
   def self.all
