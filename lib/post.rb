@@ -24,7 +24,7 @@ class Post
 
    def title
      Post.all.select do |post|
-       post.title == title
+       post.title == self
      end
   end
 
