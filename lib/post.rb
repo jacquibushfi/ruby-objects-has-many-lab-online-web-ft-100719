@@ -23,7 +23,7 @@ class Post
 
 
    def title
-     Post.each do |post|
+     posts.map do |post|
        post.title
      end
   end
